@@ -1,0 +1,53 @@
+{% include head.html %}
+    <header class="image photowrap singlepost">
+        <img src="{{ page.image }}"/>
+        <div class="gradientoverlay"></div>
+        <div class="postdetails">
+            <div class="contentwrap">
+                <h1>{{ page.title }}</h1>
+                <div class="subtitle">{{ page.subtitle }}</div>
+            </div>
+        </div>
+    </header>
+    <div class="menuicon">
+        <a href="#menu" class="openmenu white"><span>menu</span></a>    
+    </div>
+    <div class="goback">
+        <a href="/">
+            <img src="/assets/images/pfbadge_noborder.png" alt="Go back" class="badge">
+            <span class="text">Back to overview</span>
+        </a>
+    </div>
+
+    <section class="postcontent singlepost">
+        <div class="contentwrap ">
+            {{ content }}
+        </div>
+    </section>
+    <!--
+    <footer class="paginate">
+        {% if page.previous != undefined %}
+        <div class="prevpost item {% if page.next == undefined %}full{% endif %}" style="background-image: url('{{ page.previous.image }}');">
+            <a href="{{ page.previous.url }}">
+                <div class="gradient"></div>
+                <div class="content">
+                    <h1 class="title">{{ page.previous.title }}</h1>
+                    <div class="subtitle">{{ page.previous.subtitle }}</div>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% if page.next != undefined %}
+        <div class="nextpost item {% if page.previous == undefined %}full{% endif %}" style="background-image: url('{{ page.next.image }}');">
+            <a href="{{ page.next.url }}">
+                <div class="gradient"></div>
+                <div class="content">
+                    <h1 class="title">{{ page.next.title }}</h1>
+                    <div class="subtitle">{{ page.next.subtitle }}</div>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        <div class="clear"></div>   
+    </footer>-->
+{% include foot.html %}

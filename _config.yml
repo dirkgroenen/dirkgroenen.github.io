@@ -1,0 +1,13 @@
+# Site settings
+title: Dirk Groenen
+email: dirk@bitlabs.nl
+description: "My blog about mostly frontend development, latest techniques and own brain eating projects."
+baseurl: "/"
+url: "https://dirkgroenen.github.io"
+twitter_username: dirkgroenen
+github_username:  dirkgroenen
+
+# Build settings
+kramdown:
+    input: GFM
+permalink: /:categories/:year-:month-:day/:title

@@ -1,0 +1,22 @@
+{% include head.html %}
+    {% include standardheader.html %}
+
+    <section class="postlist">
+        <div class="contentwrap small">
+            <div class="sorting">Recent posts</div>
+            {% for post in site.categories.blog %}
+                <div class="post">
+                    <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                    <span class="postdate">{{ post.date | date: "%B %-d, %Y" }}</span>
+                    <div class="excerpt">
+                        {{ post.excerpt }}
+                    </div>
+                    <div class="readmore">
+                        <a href="{{ post.url }}">Read more about {{ post.title }}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+{% include foot.html %}
