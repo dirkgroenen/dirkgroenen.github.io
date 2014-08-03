@@ -3,7 +3,8 @@ layout: post
 title:  "SVGMagic"
 subtitle: "Start using it and you will never let SVG go away"
 date:   2014-08-02 16:33:07
-image: "http://37.media.tumblr.com/eca0d43885d84763c28c47a1c686defd/tumblr_mvyxfkaRb41st5lhmo1_1280.jpg"
+image: "http://31.media.tumblr.com/e7ac48834604ac8e9aaf4a3c106c4e86/tumblr_n9hxd1c4Y81st5lhmo1_1280.jpg"
+fbimage: "https://s3.amazonaws.com/ooomf-com-files/kMh0QXZMQOmsIiQRQIlW_14701556285_aacce9be47_o.jpg"
 categories: projects
 ---
 

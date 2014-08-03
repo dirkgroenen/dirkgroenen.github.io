@@ -2,7 +2,8 @@
 layout: post
 title:  "How this second post works"
 subtitle: "SLint is a code quality tool."
-image: "http://31.media.tumblr.com/b92879483bd60c7db0871cc64b694b05/tumblr_n9hyqfJavs1st5lhmo1_1280.jpg"
+image: "http://33.media.tumblr.com/b39a844d2c755fca6b9009e557fcf88a/tumblr_n9hym20RNy1st5lhmo1_1280.jpg"
+fbimage: "https://s3.amazonaws.com/ooomf-com-files/jNgy1b3MR0uJx7rysNNf_Rooftops%20by%20Igor%20Ovsyannykov.jpg"
 categories: blog
 ---
 
