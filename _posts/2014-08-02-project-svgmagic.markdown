@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title:  "SVGMagic"
 subtitle: "Start using it and you will never let SVG go away"
 date:   2014-08-02 16:33:07

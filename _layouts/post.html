@@ -1,4 +1,22 @@
 {% include head.html %}
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '619203601527051',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <header class="image photowrap singlepost">
         <img src="{{ page.image }}"/>
         <div class="gradientoverlay"></div>
@@ -12,42 +30,44 @@
     <div class="menuicon">
         <a href="#menu" class="openmenu white"><span>menu</span></a>    
     </div>
-    <div class="goback">
-        <a href="/">
-            <img src="/assets/images/pfbadge_noborder.png" alt="Go back" class="badge">
-            <span class="text">Back to overview</span>
-        </a>
+    <div class="authorinfo">
+        <a href="/"><img src="/assets/images/pfbadge_noborder.png" alt="Go back" class="badge">
+        <span class="text">Dirk Groenen</span></a>
+        <ul>
+            <li><a href="https://plus.google.com/u/0/+DirkGroenen?rel=author" rel="author" target="_blank">Google+</a></li>
+            <li><a href="https://twitter.com/dirkgroenen" target="_blank">Twitter</a></li>
+        </ul>
     </div>
 
     <section class="postcontent singlepost">
-        <div class="contentwrap ">
+        <div class="contentwrap">
+            <div class="postdate">{{ page.date | date: "%B %-d, %Y" }}</div>
             {{ content }}
+            <div class="share">
+                Share: 
+                <a href="#" class="brandico-twitter-bird share" id="twitter" data-url="{{ site.url }}{{ page.url }}"></a>
+                <a href="#" class="brandico-facebook-rect share" id="facebook" data-url="{{ site.url }}{{ page.url }}"></a>
+            </div>
         </div>
     </section>
-    <!--
-    <footer class="paginate">
-        {% if page.previous != undefined %}
-        <div class="prevpost item {% if page.next == undefined %}full{% endif %}" style="background-image: url('{{ page.previous.image }}');">
-            <a href="{{ page.previous.url }}">
-                <div class="gradient"></div>
-                <div class="content">
-                    <h1 class="title">{{ page.previous.title }}</h1>
-                    <div class="subtitle">{{ page.previous.subtitle }}</div>
-                </div>
-            </a>
+    
+    <div class="paginate">
+        <div class="contentwrap ">
+            <div class="column previous">
+                {% if page.previous != undefined %}
+                    <a href="{{ page.previous.url }}">Previous post: {{ page.previous.title }}</a>
+                {% else %}
+                &nbsp;
+                {% endif %}
+            </div>
+            <div class="column next">
+                {% if page.next != undefined %}
+                    <a href="{{ page.next.url }}">Next post: {{ page.next.title }}</a>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="clear"></div>   
         </div>
-        {% endif %}
-        {% if page.next != undefined %}
-        <div class="nextpost item {% if page.previous == undefined %}full{% endif %}" style="background-image: url('{{ page.next.image }}');">
-            <a href="{{ page.next.url }}">
-                <div class="gradient"></div>
-                <div class="content">
-                    <h1 class="title">{{ page.next.title }}</h1>
-                    <div class="subtitle">{{ page.next.subtitle }}</div>
-                </div>
-            </a>
-        </div>
-        {% endif %}
-        <div class="clear"></div>   
-    </footer>-->
+    </div>
 {% include foot.html %}
