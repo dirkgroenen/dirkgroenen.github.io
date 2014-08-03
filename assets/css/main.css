@@ -392,18 +392,23 @@ header.image.singlepost .postdetails .subtitle{
     width: 150px;
 }
 
+.authorinfo,
+.authorinfo *{
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
 .authorinfo img.badge{
     width: 43px;
     opacity: 1;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    transition: all .3s ease;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
+    cursor: pointer;
 }
 
 
@@ -423,10 +428,6 @@ header.image.singlepost .postdetails .subtitle{
     transform: translate3D(-40px, 0, 0);
     z-index: -1;
     opacity: 0;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .authorinfo.white .text{
@@ -451,10 +452,6 @@ header.image.singlepost .postdetails .subtitle{
     -moz-transform: translate3D(-40px, 0, 0);
     -ms-transform: translate3D(-40px, 0, 0);
     transform: translate3D(-40px, 0, 0);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .authorinfo ul li a{
@@ -463,10 +460,6 @@ header.image.singlepost .postdetails .subtitle{
     font-family: "ubuntu";
     font-weight: 100;
     text-transform: lowercase;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    transition: all .3s ease;
 }
 
 .authorinfo.white ul li a{
@@ -504,6 +497,47 @@ header.image.singlepost .postdetails .subtitle{
     -ms-filter: grayscale(0%);
     -o-filter: grayscale(0%);
     filter: grayscale(0%);
+}
+
+.authorinfo.open{
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    text-align: center;
+}
+
+.authorinfo.open img.badge{
+    width: 175px;
+}
+
+.authorinfo.open .text{
+    opacity: 1;
+    position: static;
+    display:block;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translate3D(0, 0, 0);
+    font-size: 40px;
+    text-transform: none;
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+
+.authorinfo.open ul {
+    position: static;
+    margin-top: 10px;
+}
+
+.authorinfo.open ul li{
+    opacity: 1;
+    -webkit-transform: translate3D(0, 0, 0);
+    display: inline-block;
+    padding: 0 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+
+.authorinfo.open ul li a{
+    font-size: 18px;
 }
 
 /* Post overview */

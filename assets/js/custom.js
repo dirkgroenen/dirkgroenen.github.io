@@ -15,6 +15,14 @@
             });
         }
 
+        if($(".authorinfo").length){
+            $(".showcontact").click(function(e){
+                e.preventDefault();
+                $(".authorinfo").addClass("open"); 
+                $("nav.mainmenu, a.openmenu").removeClass("open");
+            });
+        }
+
         $("a.openmenu").click(function(e){
             e.preventDefault();
             $("nav.mainmenu, a.openmenu").toggleClass("open");
