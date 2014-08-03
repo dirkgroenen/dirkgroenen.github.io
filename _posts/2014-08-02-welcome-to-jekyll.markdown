@@ -3,8 +3,8 @@ layout: post
 title:  "Welcome to Jekyll!"
 subtitle: "Jekyll also offers powerful support for code snippets"
 date:   2014-08-02 16:33:07
-image: "http://38.media.tumblr.com/09c8a485996628c6349e6afa376b2c42/tumblr_n7yh01HyPI1st5lhmo1_1280.jpg"
-fbimage: "https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg"
+image: "//38.media.tumblr.com/09c8a485996628c6349e6afa376b2c42/tumblr_n7yh01HyPI1st5lhmo1_1280.jpg"
+fbimage: "//s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg"
 categories: blog
 ---
 

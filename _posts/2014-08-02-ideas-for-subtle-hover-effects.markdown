@@ -3,8 +3,8 @@ layout: post
 title:  "Ideas for subtle hover effects"
 subtitle: "Some creative and subtle hover effect inspiration using latest techniques"
 date:   2014-07-02 16:33:07
-image: "http://38.media.tumblr.com/2c1a9d53169f1eca25b2a0b8238744c9/tumblr_n9hxdqatsK1st5lhmo1_1280.jpg"
-fbimage: "https://s3.amazonaws.com/ooomf-com-files/apx8EPiSnWoYHSEiUENI_14553734675_699b2aa038_o.jpg" 
+image: "//38.media.tumblr.com/2c1a9d53169f1eca25b2a0b8238744c9/tumblr_n9hxdqatsK1st5lhmo1_1280.jpg"
+fbimage: "//s3.amazonaws.com/ooomf-com-files/apx8EPiSnWoYHSEiUENI_14553734675_699b2aa038_o.jpg" 
 categories: blog
 ---
 
