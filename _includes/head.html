@@ -20,6 +20,13 @@
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="//dirkgroenen.github.io/jQuery-parallax-scrolling/src/jquery.parallaxscrolling.js"></script>
         <script src="/assets/js/custom.js"></script>
+
+        <!-- seo tags -->
+        <meta property="og:image" content="{{ page.image }}" />
+        <meta property="og:description" content="{{ page.excerpt }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+        <meta property="og:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}" />
+        
     </head>
     <body>
         <nav class="mainmenu">
