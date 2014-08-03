@@ -411,7 +411,7 @@ header.image.singlepost .postdetails .subtitle{
     color: #343436;
     font-size: 14px;
     font-family: "ubuntu";
-    font-weight: 100;
+    font-weight: bold;
     text-transform: lowercase;
     position: absolute;
     left: 50px;
