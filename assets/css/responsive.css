@@ -28,6 +28,17 @@
         line-height: 45px;
     }
 
+    .authorinfo.open{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 15px;
+        left: 0;
+    }
+
+    .authorinfo.open img.badge{
+        width: 150px;
+    }
+
     nav.mainmenu.open{
         border-width: 0 0 50px 225px;
     }

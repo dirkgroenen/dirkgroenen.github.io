@@ -600,9 +600,9 @@ header.image.singlepost .postdetails .subtitle{
 }
 
 .authorinfo.open .opentext{
-    -webkit-transition-delay: .2s;   
-    -moz-transition-delay: .2s;   
-    transition-delay: .2s;   
+    -webkit-transition-delay: .1s;   
+    -moz-transition-delay: .1s;   
+    transition-delay: .1s;   
     margin-top: 20px;
     -webkit-transform: translate3D(0, 0,  0);
     -moz-transform: translate3D(0, 0, 0);
@@ -805,6 +805,10 @@ header.image.singlepost .postdetails .subtitle{
 
 .postcontent.singlepost .share a#twitter:hover{
     color: #55acee;
+}
+
+.postcontent.singlepost .share a#googleplus:hover{
+    color: #dd4b39;
 }
 
 /* Post paginate */

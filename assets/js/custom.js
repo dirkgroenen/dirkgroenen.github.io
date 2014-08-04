@@ -45,6 +45,7 @@
             e.preventDefault();
             console.log();
             var twitterurl = "https://twitter.com/intent/tweet?original_referer=" + $(this).attr('data-url') + "&text='" + $(".postdetails h1").first().text() + "'&tw_p=tweetbutton&url=" + $(this).attr('data-url') + "&via=dirkgroenen";
+            var googleurl = "https://plus.google.com/share?url=" + $(this).attr("data-url");
 
             switch($(this).attr("id")){
                 case "twitter":
@@ -55,6 +56,9 @@
                       method: 'share',
                       href: $(this).attr("data-url"),
                     }, function(response){});
+                    break;
+                case "googleplus":
+                    window.open(googleurl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
                     break;
             }
 

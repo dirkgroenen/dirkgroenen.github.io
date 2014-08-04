@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Blog">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,12 +21,15 @@
         <script src="//dirkgroenen.github.io/jQuery-parallax-scrolling/src/jquery.parallaxscrolling.js"></script>
         <script src="/assets/js/custom.js"></script>
 
-        <!-- seo tags -->
+        <!-- social tags -->
         <meta property="og:image" content="{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}" />
         <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
         <meta property="og:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}" />
-        
+        <meta itemprop="name" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
+        <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
+        <meta itemprop="image" content="{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
+
         <link rel="shortcut icon" type="image/png" href="/assets/images/pfbadge_noborder.png"/>
     </head>
     <body>
@@ -50,7 +53,7 @@
         </div>
         <div class="authorinfo white">
             <img src="/assets/images/pfbadge_noborder.png" alt="Go back" class="badge showcontact">
-            <span class="text">Dirk Groenen</span>
+            <span class="text" itemprop="author">Dirk Groenen</span>
             <ul>
                 <li><a href="https://plus.google.com/u/0/+DirkGroenen?rel=author" rel="author" target="_blank">Google+</a></li>
                 <li><a href="https://twitter.com/dirkgroenen" target="_blank">Twitter</a></li>
