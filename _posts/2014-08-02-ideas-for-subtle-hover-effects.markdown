@@ -13,6 +13,17 @@ The techniques we are using for these hover effects involve 3D transforms and so
 
 Sadly, transitions on text in Firefox are not very smooth which influences most of the effects.
 
+    if($(".authorinfo").length > 0 && $("header.image.singlepost").length > 0){
+        $(window).scroll(function(){
+            if($(document).scrollTop() > $("header.image.singlepost").height() - 30){
+                $("a.openmenu, .authorinfo:not(.open)").removeClass("white");
+            }
+            else{
+                $("a.openmenu, .authorinfo").addClass("white");
+            }
+        });
+    }
+
 The beautiful photography is from Unsplash, a site that brings you 10 free hi-resolution photos every 10 days. The icons used in one of the hover styles is from the Feather icon set by Cole Bemis.
 
 For the structure we are simply using a grid with figures:It’s time for some fresh hover effect inspiration! Nowadays we are seeing a lot of delicate designs with fine lines, lots of white space, clean typography and subtle effects. With that beautiful trend in mind we want to share some creative ideas for grid item hover effects. It’s all about being subtle with that little delightful surprise.
@@ -23,3 +34,5 @@ Sadly, transitions on text in Firefox are not very smooth which influences most 
 The beautiful photography is from Unsplash, a site that brings you 10 free hi-resolution photos every 10 days. The icons used in one of the hover styles is from the Feather icon set by Cole Bemis.
 
 For the structure we are simply using a grid with figures:
+
+![Responsive](http://front-endmagazine.com/wp-content/uploads/2012/10/base-responsive-framework.jpg)
