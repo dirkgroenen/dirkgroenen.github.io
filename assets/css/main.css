@@ -111,6 +111,9 @@ p img{
     width: 40px;
     height: 50px;
     cursor: pointer;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .menuicon a.openmenu span{
@@ -144,6 +147,20 @@ p img{
     transition: all 0.3s;
 }
 
+.menuicon a.openmenu.closearrow span{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.menuicon a.openmenu.closearrow span:before{
+    -webkit-transform: rotate(45deg);
+    background-color: white;
+}
+
+.menuicon a.openmenu.closearrow span:after{
+    -webkit-transform: rotate(-45deg);   
+    background-color: white;
+}
+
 .menuicon a.openmenu.open span:before,
 .menuicon a.openmenu.open span:after,
 .menuicon a.openmenu.open span,
@@ -154,23 +171,23 @@ p img{
 }
 
 .menuicon a.openmenu span:before{
-    -webkit-transform: translateY(-250%);
-    transform: translateY(-250%);
+    -webkit-transform: translateY(-250%) rotate(0);
+    transform: translateY(-250%) rotate(0);
 }
 
 .menuicon a.openmenu span:after{
-    -webkit-transform: translateY(250%);
-    transform: translateY(250%);
+    -webkit-transform: translateY(250%) rotate(0);
+    transform: translateY(250%) rotate(0);
 }
 
 .menuicon a.openmenu.open span:before{
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%);
+    -webkit-transform: translateY(-300%) rotate(0);
+    transform: translateY(-300%) rotate(0);
 }
 
 .menuicon a.openmenu.open span:after{
-    -webkit-transform: translateY(300%);
-    transform: translateY(300%);
+    -webkit-transform: translateY(300%) rotate(0);
+    transform: translateY(300%) rotate(0);
 }
 
 nav.mainmenu{
@@ -309,9 +326,42 @@ nav.mainmenu.open .bt-overlay {
 }
 
 /* Site header */
+.contactoverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity 53s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+
+.contactoverlay.open{
+    opacity: 1;
+    z-index: 100;
+}
+
 header.main{
     text-align: center;
     margin: 50px 0 75px 0;
+}
+
+header.main .profile{
+    opacity: 1;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity 53s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+
+header.main .profile.hidden{
+    opacity: 0;
 }
 
 header.main .profile .pfimage img.badge{
@@ -470,6 +520,14 @@ header.image.singlepost .postdetails .subtitle{
     color: #2abb9b;
 }
 
+.authorinfo .opentext{
+    opacity: 0;
+    -webkit-transform: translate3D(0, -500px, 0);
+    -moz-transform: translate3D(0, -500px, 0);
+    -ms-transform: translate3D(0, -500px, 0);
+    transform: translate3D(0, -500px, 0);
+}
+
 .authorinfo:hover ul li,
 .authorinfo:hover .text{
     -webkit-transform: translate3D(0px, 0, 0);
@@ -501,6 +559,7 @@ header.image.singlepost .postdetails .subtitle{
 
 .authorinfo.open{
     left: 50%;
+    top: 50px;
     width: 600px;
     margin-left: -300px;
     text-align: center;
@@ -538,6 +597,23 @@ header.image.singlepost .postdetails .subtitle{
 
 .authorinfo.open ul li a{
     font-size: 18px;
+}
+
+.authorinfo.open .opentext{
+    -webkit-transition-delay: .2s;   
+    -moz-transition-delay: .2s;   
+    transition-delay: .2s;   
+    margin-top: 20px;
+    -webkit-transform: translate3D(0, 0,  0);
+    -moz-transform: translate3D(0, 0, 0);
+    -ms-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
+    opacity: 1;
+    color: white;
+    font-family: "Ubuntu";
+    font-weight: 100;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.2);
 }
 
 /* Post overview */

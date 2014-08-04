@@ -7,7 +7,7 @@
         if($(".authorinfo").length > 0 && $("header.image.singlepost").length > 0){
             $(window).scroll(function(){
                 if($(document).scrollTop() > $("header.image.singlepost").height() - 30){
-                    $("a.openmenu, .authorinfo").removeClass("white");
+                    $("a.openmenu, .authorinfo:not(.open)").removeClass("white");
                 }
                 else{
                     $("a.openmenu, .authorinfo").addClass("white");
@@ -18,14 +18,23 @@
         if($(".authorinfo").length){
             $(".showcontact").click(function(e){
                 e.preventDefault();
-                $(".authorinfo").addClass("open"); 
+                $(".authorinfo, .contactoverlay").addClass("open white"); 
                 $("nav.mainmenu, a.openmenu").removeClass("open");
+                $("a.openmenu").addClass("closearrow");
+                $("header.main .profile").addClass("hidden");
             });
         }
 
         $("a.openmenu").click(function(e){
             e.preventDefault();
-            $("nav.mainmenu, a.openmenu").toggleClass("open");
+            if($(this).hasClass("closearrow")){
+                $(this).removeClass("closearrow");
+                $(".authorinfo, .contactoverlay").removeClass("open"); 
+                $("header.main .profile").removeClass("hidden");
+            }
+            else{
+                $("nav.mainmenu, a.openmenu").toggleClass("open");
+            }
         });
 
         $("nav.mainmenu .bt-overlay").click(function(){
