@@ -179,23 +179,23 @@ p img{
 }
 
 .menuicon a.openmenu span:before{
-    -webkit-transform: translateY(-250%) rotate(0deg);
-    transform: translateY(-250%) rotate(0deg);
+    -webkit-transform: translateY(-12px) translateZ(0) rotate(0deg);
+    transform: translateY(-12px) translateZ(0) rotate(0deg);
 }
 
 .menuicon a.openmenu span:after{
-    -webkit-transform: translateY(250%) rotate(0deg);
-    transform: translateY(250%) rotate(0deg);
+    -webkit-transform: translateY(12px) translateZ(0) rotate(0deg);
+    transform: translateY(12px) translateZ(0) rotate(0deg);
 }
 
 .menuicon a.openmenu.open span:before{
-    -webkit-transform: translateY(-300%) rotate(0deg);
-    transform: translateY(-300%) rotate(0deg);
+    -webkit-transform: translateY(-16px) translateZ(0) rotate(0deg);
+    transform: translateY(-16px) translateZ(0) rotate(0deg);
 }
 
 .menuicon a.openmenu.open span:after{
-    -webkit-transform: translateY(300%) rotate(0deg);
-    transform: translateY(300%) rotate(0deg);
+    -webkit-transform: translateY(16px) translateZ(0) rotate(0deg);
+    transform: translateY(16px) translateZ(0) rotate(0deg);
 }
 
 nav.mainmenu{
