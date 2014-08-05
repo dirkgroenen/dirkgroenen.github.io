@@ -15,6 +15,10 @@
             });
         }
 
+        if($(".postlist").length > 0){
+            $("a.openmenu, .authorinfo").removeClass("white");
+        }
+
         if($(".authorinfo").length){
             $(".showcontact").click(function(e){
                 e.preventDefault();

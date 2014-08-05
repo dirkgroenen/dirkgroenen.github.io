@@ -144,7 +144,11 @@ p img{
     background-color: #343436;
     content: '';
     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
     transition: all 0.3s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg); 
+    transform: rotate(0deg); 
 }
 
 .menuicon a.openmenu.closearrow span{
@@ -153,11 +157,15 @@ p img{
 
 .menuicon a.openmenu.closearrow span:before{
     -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    transform: rotate(45deg); 
     background-color: white;
 }
 
 .menuicon a.openmenu.closearrow span:after{
-    -webkit-transform: rotate(-45deg);   
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    transform: rotate(-45deg); 
     background-color: white;
 }
 
@@ -171,23 +179,23 @@ p img{
 }
 
 .menuicon a.openmenu span:before{
-    -webkit-transform: translateY(-250%) rotate(0);
-    transform: translateY(-250%) rotate(0);
+    -webkit-transform: translateY(-250%) rotate(0deg);
+    transform: translateY(-250%) rotate(0deg);
 }
 
 .menuicon a.openmenu span:after{
-    -webkit-transform: translateY(250%) rotate(0);
-    transform: translateY(250%) rotate(0);
+    -webkit-transform: translateY(250%) rotate(0deg);
+    transform: translateY(250%) rotate(0deg);
 }
 
 .menuicon a.openmenu.open span:before{
-    -webkit-transform: translateY(-300%) rotate(0);
-    transform: translateY(-300%) rotate(0);
+    -webkit-transform: translateY(-300%) rotate(0deg);
+    transform: translateY(-300%) rotate(0deg);
 }
 
 .menuicon a.openmenu.open span:after{
-    -webkit-transform: translateY(300%) rotate(0);
-    transform: translateY(300%) rotate(0);
+    -webkit-transform: translateY(300%) rotate(0deg);
+    transform: translateY(300%) rotate(0deg);
 }
 
 nav.mainmenu{
