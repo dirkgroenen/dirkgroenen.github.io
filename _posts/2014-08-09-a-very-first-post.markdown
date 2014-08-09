@@ -6,6 +6,7 @@ date:   2014-08-09 15:30:07
 image: "/assets/images/svgmagic-top-splash.jpg"
 fbimage: "/assets/images/svgmagic-top-splash.jpg"
 categories: projects
+comments: true
 ---
 
 When you're working with responsive web designs and retina-displays SVG graphics are absolutely indispensable. However, fall-back solutions often put you on a lot of extra work. With SVGmagic I wanted to create a plugin that does all the fallback work, so I could just focus on the SVG images.
