@@ -414,7 +414,7 @@ header.image.singlepost .gradientoverlay{
 
 header.image.singlepost .postdetails{
     position: absolute;
-    top: 70%;
+    bottom: 15%;
     left: 0;
     width: 100%;
     z-index: 20;
@@ -427,6 +427,7 @@ header.image.singlepost .postdetails{
 header.image.singlepost .postdetails h1{
     color: #fdfdfd;
     font-size: 50px;
+    line-height: 57px;
     margin: 0;
     letter-spacing: 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,.25);
