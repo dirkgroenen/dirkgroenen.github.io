@@ -774,6 +774,7 @@ header.image.singlepost .postdetails .subtitle{
     padding-bottom: 90px;
     font-size: 18px;
     line-height: 33px;
+    background-color: white;
 }
 
 .postcontent.singlepost h2{
