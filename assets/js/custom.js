@@ -1,6 +1,11 @@
 (function($){
 
     $(document).ready(function(){
+        $(".postcontent a").each(function(){
+            $(this).attr("target", "_blank");
+        });
+   
+        // Parallax image for post top
         $.parallax({speed: .9});
 
         // Check if the authorinfo text has to be changed back to black/white
