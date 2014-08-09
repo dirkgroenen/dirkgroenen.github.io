@@ -16,7 +16,7 @@ During my days at the office the designers often asked me why it wasn't possible
 ## The idea
 After hearing this question repeating itself through the office daily I started thinking of a way to create an automated fallback. After a few hours I started working on a little script that searched the website for any SVG images and, if SVG wasn't supported by the browser, send those URLs to an API. This API downloads all the SVG images, converts them to PNG and returns an array with the location of the converted images. When the plugin receives the array with new URLs it loops again through all the images and replaces the SVG image with the new PNG image. 
 
-At this moment the first version of [SVGMagic](http://dirkgroenen.github.io/svgmagic) was born! I pushed the script to Github so I could use it in every project from that moment on. 
+At this moment the first version of [SVGMagic](https://dirkgroenen.github.io/SVGMagic/) was born! I pushed the script to Github so I could use it in every project from that moment on. 
 
 A few days later it got mentioned by [Codrops](http://tympanus.net/codrops/collective/collective-100/) and within a few hours it got mentioned throughout the whole world. Nowadays the plugin has been extended and offers even more fallbacks.
 
