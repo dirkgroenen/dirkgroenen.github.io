@@ -146,9 +146,9 @@ p img{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg); 
-    transform: rotate(0deg); 
+    -webkit-transform: translateZ(0) rotate(0deg);
+    -moz-transform: translateZ(0) rotate(0deg); 
+    transform: translateZ(0) rotate(0deg); 
 }
 
 .menuicon a.openmenu.closearrow span{
