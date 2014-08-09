@@ -20,6 +20,6 @@ At this moment the first version of [SVGMagic](http://dirkgroenen.github.io/svgm
 
 A few days later it got mentioned by [Codrops](http://tympanus.net/codrops/collective/collective-100/) and within a few hours it got mentioned throughout the whole world. Nowadays the plugin has been extended and offers even more fallbacks.
 
-So if you're ever wanting to try SVG graphics, but aren't motivated to create a full fallback for it, just check out [SVGMagic](https://dirkgroenen.github.io/SVGMagic/) and let me know if you liked it! 
+So if you ever want to try SVG graphics, but aren't motivated enough to create a full fallback for it, just check out [SVGMagic](https://dirkgroenen.github.io/SVGMagic/) and let me know if you liked it! 
 
 [SVGMagic]: https://github.com/dirkgroenen/svgmagic
