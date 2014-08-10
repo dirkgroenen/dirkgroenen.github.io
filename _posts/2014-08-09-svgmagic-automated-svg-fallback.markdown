@@ -2,7 +2,7 @@
 layout: post
 title: "SVGMagic: Automated SVG fallback"
 subtitle: "Because SVGs are so much better, prettier and easier to use!"
-date: {}
+date: 2014-08-09 15:30:07
 image: "/assets/images/svgmagic-top-splash.jpg"
 fbimage: "/assets/images/svgmagic-top-splash.jpg"
 categories: projects
