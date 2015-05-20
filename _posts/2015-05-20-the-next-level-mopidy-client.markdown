@@ -10,7 +10,7 @@ comments: true
 published: true
 ---
 
-In 2013 I moved on my own and one of the things I definitely wanted in my new apartment was something that would enable me to control my music anywhere in the place. Of course, the first thing I thought about was Sony's Sonos, but looking at those prices and that awful interface I almost died. Lucky as I am I've chosen the road of being a developer. So why not just create my own system?!
+In 2013 I moved tot a new place and one of the things I definitely wanted in my new apartment was something that would enable me to control my music anywhere in the place. Of course, the first thing I thought about was Sony's Sonos, but looking at those prices and that awful interface I almost died. Lucky as I am I've chosen the road of being a developer. So why not just create my own system?!
 
 *TL;DR
 I just wanted to tell you a bit more about Mopify, but fine! The conclusion: Mopify is a Mopidy web client which aims on providing a full music experience and which needs a new create name/brand.*
