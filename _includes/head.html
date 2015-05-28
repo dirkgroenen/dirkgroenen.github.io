@@ -22,7 +22,7 @@
         <script src="/assets/js/custom.js"></script>
 
         <!-- social tags -->
-        <meta property="og:image" content="{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}" />
+        <meta property="og:image" content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}" />
         <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
         <meta property="og:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}" />
