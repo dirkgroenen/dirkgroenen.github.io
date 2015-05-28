@@ -17,6 +17,7 @@
     
     header.image.singlepost{
         height: 60%;
+        min-height: 400px
     }
 
     header.image.singlepost .postdetails{
