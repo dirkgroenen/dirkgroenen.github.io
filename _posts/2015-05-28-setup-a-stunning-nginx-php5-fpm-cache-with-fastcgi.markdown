@@ -44,7 +44,7 @@ After we have defined the default options we will open our Virtual Host configur
 nano /etc/nginx/sites-available/bitlabs.nl.conf
 ```
 
-We scroll to that directive where PHP request are passed to php5-fpm. Inside the ``location ~ \.php$ {}`` directive we add to following lines of code. This will enable the FastCGI cache for the parsed PHP files. 
+We scroll to the directive where PHP request are passed to php5-fpm. Inside the ``location ~ \.php$ {}`` directive we add the following lines of code. This will enable the FastCGI cache for the parsed PHP files. 
 
 ```
 fastcgi_cache  microcache;
@@ -143,7 +143,7 @@ fastcgi_no_cache $no_cache;
 
 ## Testing your setup 
 
-After you have added everything and reloaded Nginx we can start testing. Open your terminal and run the following command:
+After you have added everything and reloaded Nginx you can start testing. Open your terminal and run the following command:
 
 ```
 curl -X GET -I http://bitlabs.nl/
@@ -165,7 +165,7 @@ X-Cache: HIT
 
 Remember the ``X-Cache`` header we defined in Nginx's config file? As you can see the header has been added to our response. In this case the header says ``HIT`` which tells us that the returned response was coming from our cache.
 
-In my exceptions I've added ``wp-login.php``. We can't test this by running the following command:
+In my exceptions I've added ``wp-login.php``. This should result in a cache bypass which we can test by running the following command:
 
 ```
 curl -X GET -I http://bitlabs.nl/wp-login.php
@@ -186,3 +186,7 @@ X-Cache: BYPASS
 ```
 
 As you can see the X-Cache header now tells us that this page bypassed the cache. when running a Wordpress website you have to be sure that your server doesn't cache pages like ``wp-login.php`` and ``wp-admin``. This can result in unexpected behavior. 
+
+## Finished
+
+That's it. You know have a fully working Nginx + PHP5-CLI cache setup. Let me know if this article helped you or if you have any problems! 
