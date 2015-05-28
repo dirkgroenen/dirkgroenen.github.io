@@ -28,7 +28,14 @@
         <meta property="og:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}" />
         <meta itemprop="name" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
         <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
-        <meta itemprop="image" content="{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
+        <meta itemprop="image" content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@dirkgroenen">
+        <meta name="twitter:creator" content="@dirkgroenen">
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
+        <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="twitter:image" content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
 
         <link rel="shortcut icon" type="image/png" href="/assets/images/pfbadge_noborder.png"/>
 
