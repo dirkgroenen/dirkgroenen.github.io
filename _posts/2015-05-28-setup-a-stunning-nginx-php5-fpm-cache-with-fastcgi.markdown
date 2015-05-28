@@ -44,7 +44,7 @@ After we have defined the default options we will open our Virtual Host configur
 nano /etc/nginx/sites-available/bitlabs.nl.conf
 ```
 
-We scroll to that directive where PHP request are passed to php5-fpm. Inside the ``location ~ \.php$ {}``` directive we add to following lines of code. This will enable the FastCGI cache for the parsed PHP files. 
+We scroll to that directive where PHP request are passed to php5-fpm. Inside the ``location ~ \.php$ {}`` directive we add to following lines of code. This will enable the FastCGI cache for the parsed PHP files. 
 
 ```
 fastcgi_cache  microcache;
