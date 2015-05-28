@@ -105,7 +105,7 @@ location ~ \.php$ {
 ```
 
 ## Define cache exceptions
-In some cases you don't want FastCHI to cache the page. Think of authentication pages, backends or other content that has to be dynamic. Such content can be excluded from the cache by adding ``fastcgi_cache_bypass`` and ``fastcgi_no_cache``. 
+In some cases you don't want FastCGI to cache the page. Think of authentication pages, backends or other content that has to be dynamic. Such content can be excluded from the cache by adding ``fastcgi_cache_bypass`` and ``fastcgi_no_cache``. 
 
 In my case I use a ``$no_cache`` variable which is used to tell FastCGI that some pages don't need to be cached. I have defined some default rules I add to every Virtual Host configuration file:
 
