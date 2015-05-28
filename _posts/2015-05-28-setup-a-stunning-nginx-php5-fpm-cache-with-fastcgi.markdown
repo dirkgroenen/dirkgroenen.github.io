@@ -185,4 +185,4 @@ X-Frame-Options: SAMEORIGIN
 X-Cache: BYPASS
 ```
 
-As you can see the X-Cache header now tells us that this page bypassed the cache. when running a Wordpress website you have to be sure that your server doesn't cache pages like ``wp-login.php`` and wp-admin``. This can result in unexpected behavior. 
+As you can see the X-Cache header now tells us that this page bypassed the cache. when running a Wordpress website you have to be sure that your server doesn't cache pages like ``wp-login.php`` and ``wp-admin``. This can result in unexpected behavior. 
