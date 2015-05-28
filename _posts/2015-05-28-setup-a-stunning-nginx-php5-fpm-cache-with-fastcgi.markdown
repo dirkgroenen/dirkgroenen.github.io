@@ -36,7 +36,7 @@ fastcgi_cache_path /usr/share/nginx/cache/fcgi levels=1:2 keys_zone=microcache:1
 add_header X-Cache $upstream_cache_status;
 ```
 
-The ``fastcgi_cache_path`` directive defines the location of the cache (in my case the directory we've created), the subdirectory levels, memory zone name (microcache), it's maximum size (10m) and the inactive time. The size must be less than your server's RAM + Swap or you will receive an error. The inactive timer will make sure that the cache is removed after it has been inactive for the given time.
+The ``fastcgi_cache_path`` directive defines the location of the cache (in my case the directory we've created), the subdirectory levels, memory zone name (microcache), it's maximum size (10m) and the inactive time. Please be sure that the max_size must be less than your server's RAM + Swap. Otherwise you will get an error. The inactive timer will make sure that the cache is removed after it has been inactive for the given time.
 
 After we have defined the default options we will open our Virtual Host configuration file for which caching has to be enabled. In my case I'm editing my bitlabs.nl Virtual Host. 
 
