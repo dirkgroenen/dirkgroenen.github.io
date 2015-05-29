@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setup an autoresponder for Postfix with Goldfish"
+title: "How to setup an autoresponder for Postfix with Goldfish"
 subtitle: "Including a Roundcube plugin to manage it"
 date: 2015-05-29 14:18:00
 categories: blog
@@ -35,7 +35,7 @@ rm -r /usr/local/goldfish/Goldfish-Autoresponder-master
 
 This will create a directory to store Goldfish in, download the script, extract it and move it to the created directory. After you've followed the steps above we should have a ``goldfish.php`` file in ``/usr/local/goldfish```. 
 
-Goldfish makes use of an extra table in which it will store the autoresponse messages and setting. Login to your MySQL server and run the query:
+Goldfish makes use of an extra table in which it will store the autoresponse messages and settings. Login to your MySQL server and run the following query:
 
 ```
 CREATE TABLE `autoresponder` (
@@ -52,7 +52,7 @@ CREATE TABLE `autoresponder` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 ```
 
-We now have the required files and table to get Goldfish up and running. Before we can actually use Goldfish we have to change some configuration values in the goldfish.php file. Open the file with your favorite editor and change the configuration values to match your server setup. 
+We now have the required files and table to get Goldfish up and running. Before we can actually use Goldfish we have to change some configuration values in the ``goldfish.php`` file. Open the file with your favorite editor and change the configuration values to match your server setup. 
 
 ```
 nano /usr/local/goldfish/goldfish.php
@@ -98,13 +98,13 @@ $conf['cycle'] = 15 * 60;
 ```
 
 # Adding an autoresponse message 
-After you have installed and configured Goldfish it's time to add our first autoresponse message. Login to your MySQL server:
+After you have installed and configured Goldfish it's time to add our first autoresponse message. Login to your MySQL server
 
 ```
 mysql -u mailuser -p 
 ```
 
-Run the following query which will insert the needed data in the autoresponder table:
+and run the following query which will insert the needed data in the autoresponder table:
 
 ```
 USE mailserver;
@@ -118,7 +118,7 @@ INSERT INTO `autoresponder` (`email`, `descname`, `from`, `to`, `message`, `enab
 quit;
 ```
 
-The above command created an autoresposne for ``office@mail.com`` which will be active from ``2015-05-20`` till ``2015-05-30``. Because we have created a cronjob which runs every 5 minutes, Goldfish won't send a message immediately, but somewhere within a range of five minutes after the mail was received.
+The above command created an autoresponse for ``office@mail.com`` which will be active from ``2015-05-20`` till ``2015-05-30``. Because we have created a cronjob which runs every 5 minutes, Goldfish won't send a message immediately, but somewhere within a range of five minutes after the mail was received.
 
 If we send a message to ``office@mail.com`` and check the Goldfish log it will show us that a new message was found and a reply has been sent to the message's sender. 
 
@@ -142,7 +142,7 @@ tail -f /var/log/goldfish
 ```
 
 # Install the RoundCube plugin
-In my case I want my users to be able to enable their own autoresponse in RoundCube. Luckily for us, Goldfish also has a RoundCube plugin which we can install. I've made some changes to the plugin so it will also run in RoundCube's latest versions.
+In my case I want my users to be able to enable their own autoresponse in RoundCube. Luckily for us, Goldfish also has a RoundCube plugin which we can install. I've made some changes to the plugin so it will also run in RoundCube's latest versions and doesn't affect other plugins.
 
 ## Install the plugin
 
