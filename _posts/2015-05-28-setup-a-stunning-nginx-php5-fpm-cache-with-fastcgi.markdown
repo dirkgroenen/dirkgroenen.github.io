@@ -129,7 +129,12 @@ if ($request_uri ~* "/(wp-login.php|wp-admin|login.php|backend|admin)"){
 }
 
 #Don't cache if there is a cookie called PHPSESSID
-if ($http_cookie = "PHPSESSID"){
+if ($http_cookie ~* "PHPSESSID"){
+    set $no_cache 1;
+}
+
+#Don't cache if there is a cookie called wordpress_logged_in_[hash]
+if ($http_cookie ~* "wordpress_logged_in_"){
     set $no_cache 1;
 }
 ``` 
