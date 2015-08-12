@@ -22,6 +22,18 @@ h1,h2,h3,h4,h5{
     font-weight: bold;
 }
 
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 23px;
+}
+
+h3{
+    font-size: 20px;
+}
+
 p{
     padding: 0;
     margin: 0 0 25px 0;
@@ -706,6 +718,7 @@ header.image.singlepost .postdetails .subtitle{
 .postlist .post .title{
     display: inline-block;
     margin: 20px 0 20px 0;
+    font-size: 25px;
 }
 
 .postlist .post .title a:hover{
@@ -718,6 +731,7 @@ header.image.singlepost .postdetails .subtitle{
     color: #888;
     font-style: italic;
     margin-top: 20px;
+    margin-left: 10px;
     text-transform: lowercase;
 }
 
@@ -790,10 +804,13 @@ header.image.singlepost .postdetails .subtitle{
     background-color: white;
 }
 
+.postcontent.singlepost h1{
+    margin: 40px 0 15px 0;
+}
+
 .postcontent.singlepost h2{
     margin: 35px 0 10px 0;
 }
-
 
 .singlepost .postdate{
     font-size: 16px;

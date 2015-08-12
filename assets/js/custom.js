@@ -2,7 +2,8 @@
 
     $(document).ready(function(){
         $(".postcontent a").each(function(){
-            $(this).attr("target", "_blank");
+            if($(this).attr("href").substr(0, 1) != "#")
+                $(this).attr("target", "_blank");
         });
    
         // Parallax image for post top
