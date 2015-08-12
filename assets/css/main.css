@@ -461,6 +461,7 @@ header.image.singlepost .postdetails .subtitle{
     top: 16px;
     left: 75px;
     width: 150px;
+    height: 0;
 }
 
 .authorinfo,
