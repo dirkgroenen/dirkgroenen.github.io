@@ -90,7 +90,16 @@ It's possible to add a shortcut to a directory or subdirectory to the navigation
 ![](http://i.imgur.com/wT4cGot.png)
 ![](http://i.imgur.com/XwE2Yf7.png)
 
+# Services
+At the moment services are extensions for Mopify. In v2.0 this will be changed to a more global scope. Instead of only Mopify/Sonate extensions it will also contain Mopidy extensions. Grouped by those two categories the user will be able to extend his client with more features. 
+
+## Mopidy services
+This category will contain the available Mopidy Extensions. The user will be informed on how to install these extensions and if the extension if available/already integrated in Mopify/Sonate. 
+
+## Sonate services
+These extensions will extend the overall client interface. Think of the ability to upload files via the client or enable the Sync service. 
+
 # Help
 Mopify/Sonate is a project I've started because I wanted a better player. I've noticed more people using, and liking, it which brings me to releasing a new version. 
 
-As of most things in life: I can't do it all myself. So if you have any suggestions of tips for the new version; please let me know! I would appreciate it! :)
+As of most things in life: I can't do it all myself. So if you have any suggestions of tips for the new version; please let me know! I would appreciate it! :) You can send me an email, drop them in the [comments on my blog](http://dirkgroenen.nl/projects/2015-08-16/mopidy-mopify-version-two/) or put them in an issue. 
