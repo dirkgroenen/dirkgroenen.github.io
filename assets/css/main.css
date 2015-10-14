@@ -58,12 +58,12 @@ code{
 a{
     color: #2abb9b;
     text-decoration: none;
-    
+
 }
 
 a:hover{
     color: #2abb9b;
-    
+
     text-decoration: none;
 }
 
@@ -167,8 +167,8 @@ p img{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-transform: translateZ(0) rotate(0deg);
-    -moz-transform: translateZ(0) rotate(0deg); 
-    transform: translateZ(0) rotate(0deg); 
+    -moz-transform: translateZ(0) rotate(0deg);
+    transform: translateZ(0) rotate(0deg);
 }
 
 .menuicon a.openmenu.closearrow span{
@@ -177,15 +177,15 @@ p img{
 
 .menuicon a.openmenu.closearrow span:before{
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg); 
-    transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
     background-color: white;
 }
 
 .menuicon a.openmenu.closearrow span:after{
-    -webkit-transform: rotate(-45deg); 
-    -moz-transform: rotate(-45deg); 
-    transform: rotate(-45deg); 
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     background-color: white;
 }
 
@@ -256,13 +256,13 @@ nav.mainmenu ul{
 
 
 nav.mainmenu ul.topleft{
-    top: 75px;  
-    left: 0;    
+    top: 75px;
+    left: 0;
 }
 
 nav.mainmenu ul.rightbottom{
-    right: 20px;  
-    bottom: 6px;    
+    right: 20px;
+    bottom: 6px;
 }
 
 nav.mainmenu.open ul{
@@ -318,8 +318,8 @@ nav.mainmenu.open ul.rightbottom li{
 }
 
 nav.mainmenu.open ul li{
-    -webkit-transform: translate3d(0,0,0);  
-    -moz-transform: translate3d(0,0,0);  
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 
@@ -418,7 +418,7 @@ header.image.singlepost{
     width: 100%;
     height: 70%;
     overflow-x: hidden;
-}   
+}
 
 header.image.singlepost img{
     width: 100%;
@@ -578,9 +578,9 @@ header.image.singlepost .postdetails .subtitle{
 }
 
 .authorinfo:hover ul li:nth-child(2){
-    -webkit-transition-delay: .2s;   
-    -moz-transition-delay: .2s;   
-    transition-delay: .2s;   
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    transition-delay: .2s;
 }
 
 .authorinfo:hover img.badge{
@@ -634,9 +634,9 @@ header.image.singlepost .postdetails .subtitle{
 }
 
 .authorinfo.open .opentext{
-    -webkit-transition-delay: .1s;   
-    -moz-transition-delay: .1s;   
-    transition-delay: .1s;   
+    -webkit-transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    transition-delay: .1s;
     margin-top: 20px;
     -webkit-transform: translate3D(0, 0,  0);
     -moz-transform: translate3D(0, 0, 0);
@@ -775,9 +775,12 @@ header.image.singlepost .postdetails .subtitle{
 .postlist .post .imagepreview .readmore{
     position: absolute;
     left: 25px;
-    top: 32px;
+    top: 50%;
     z-index: 10;
-    -webkit-transform: translateX(-15px);
+    -webkit-transform: translate(-15px, -50%);
+    -moz-transform: translate(-15px, -50%);
+    -ms-transform: translate(-15px, -50%);
+    transform: translate(-15px, -50%);
     opacity: 0;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
@@ -786,7 +789,10 @@ header.image.singlepost .postdetails .subtitle{
 }
 
 .postlist .post:hover .imagepreview .readmore{
-    -webkit-transform: translateX(0px);
+    -webkit-transform: translate(0px, -50%);
+    -moz-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
     opacity: 1;
 }
 .postlist .post .imagepreview .readmore{
