@@ -3,6 +3,7 @@ layout: post
 title: "Honeywell API documentation"
 subtitle: "An unofficial documentation of its API endpoints."
 date: 2016-01-15 22:15:00
+updated: 2016-01-16 15:42:00
 image: "/assets/images/internet-of-things.jpg"
 fbimage: "/assets/images/internet-of-things.jpg"
 categories: projects

@@ -16,7 +16,7 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-    
+
     <header class="image photowrap singlepost">
         <img src="{{ page.image }}" itemprop="image"/>
         <div class="gradientoverlay"></div>
@@ -31,16 +31,20 @@
     <section class="postcontent singlepost">
         <div class="contentwrap">
             <div class="postdate" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</div>
+            {% if page.updated != undefined %}
+            <div class="updated">Last modified: <span class="postdate" itemprop="dateModified">{{ page.updated | date: "%B %-d, %Y - %H:%M" }}</span></div>
+            {% endif %}
+
             {{ content }}
             <div class="share">
-                Share: 
+                Share:
                 <a href="#" class="brandico-twitter-bird share" id="twitter" data-url="{{ site.url }}{{ page.url }}"></a>
                 <a href="#" class="brandico-facebook-rect share" id="facebook" data-url="{{ site.url }}{{ page.url }}"></a>
                 <a href="#" class="brandico-googleplus-rect share" id="googleplus" data-url="{{ site.url }}{{ page.url }}"></a>
             </div>
         </div>
     </section>
-    
+
     {% if page.previous != undefined && page.next != undefined %}
     <div class="paginate">
         <div class="contentwrap ">
@@ -58,7 +62,7 @@
                     &nbsp;
                 {% endif %}
             </div>
-            <div class="clear"></div>   
+            <div class="clear"></div>
         </div>
     </div>
     {% endif %}

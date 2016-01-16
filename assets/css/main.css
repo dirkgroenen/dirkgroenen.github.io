@@ -839,6 +839,17 @@ header.image.singlepost .postdetails .subtitle{
     margin-bottom: 5px;
 }
 
+.singlepost .updated{
+    color: #555;
+    font-style: italic;
+    font-size: .9em;
+    margin: 0px 0 10px 0;
+}
+
+.singlepost .updated .postdate{
+    font-size: 1em;
+}
+
 .postcontent.singlepost .share{
     margin-top: 25px;
     text-align: right;
