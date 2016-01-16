@@ -3,7 +3,7 @@ layout: post
 title: "Honeywell API documentation"
 subtitle: "An unofficial documentation of its API endpoints."
 date: 2016-01-15 22:15:00
-updated: 2016-01-16 15:42:00
+updated: 2016-01-16 20:24:00
 image: "/assets/images/internet-of-things.jpg"
 fbimage: "/assets/images/internet-of-things.jpg"
 categories: projects
@@ -24,6 +24,7 @@ In this post I'll write how to simply change your thermostats temperature. Mostl
 - [Authentication](#authentication)
 - [Retrieving locations](#retrieving-locations)
 - [Changing the temperature](#changing-the-temperature)
+- [Set a location action](#setting-a-location-action)
 - [Getting a task's status](#getting-a-tasks-status)
 
 ## Default headers
@@ -88,6 +89,33 @@ Example body in case you want to set the temperature to 19.5 degrees till 10PM (
 ```
 {"Value":"19.5","Status":"Temporary","NextTime":"2016-01-16T22:00:00Z"}
 ```
+
+### Reset temperature 
+By setting `status`: `Scheduled` you can cancel the temperature override and let it go back to the scheduled temperature. In this case you have to leave the `value` and `NextTime` parameters `null`. 
+
+## Setting a location action
+The Honeywell thermostats come with some predefined actions. These actions can be used to quickly change a location to the desired temperature. To set our location's action we can make a `PUT` request to the following endpoint:
+
+```
+curl -X PUT -H "sessionId: $sessionId" -H "Content-Type: application/json" \
+    -d '{ "QuickAction": "Away", "QuickActionNextTime": "2016-01-15T00:00:00Z" }' \
+    'https://rs.alarmnet.com/TotalConnectComfort/WebAPI/api/evoTouchSystems?locationId=$locationId'
+```
+
+### Accepted parameters
+
+| Parameter | Description |
+|:------------- |:------------- |
+| QuickACtion | The name of the action |
+| QuickActionNextTime | The end time (datetime) of the action. If you want it to be persistent to can use `null`.  |
+
+Available actions are:
+- Auto
+- Custom
+- AutoWithEco
+- Away
+- DayOff
+- HeatingOff
 
 ## Getting a task's status
 Some requests, like changing the temperature, respond with a `TaskId`. We can use this ID to get the status of the Task. To get the status of a task we have to make a `GET` request to the following endpoint:
