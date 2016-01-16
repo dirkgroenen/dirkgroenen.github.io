@@ -16,7 +16,7 @@ About a month ago I moved into my new home. As I wrote a month earlier I was pla
 # Controlling the thermostat 
 So besides controlling my music and lights I would also like to be able to control my thermostat (HoneyWell Round). Right now I can do this with the Android application provided by Honeywell, but to be honest: I've seen better apps. To bad for us Honeywell doesn't provide a public documented API, so we have to put in some extra digging to find out how it all works. Luckily for me some people already wrote Python and NodeJS wrappers for it. 
 
-In this post I'll write how to simply change your thermostats temperature. Mostly as a reference for myself, but maybe I can make someone else happy with it too.
+In this post I'll write how to simply change your thermostats temperature. Mostly as a reference for myself, but maybe I can make someone else happy with it too. I've tested this API on my Honeywell Round, but there's a big change it will also work on other Honeywell products (like EvoHome) which you can control with their apps. 
 
 # API Endpoints
 
