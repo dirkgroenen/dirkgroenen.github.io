@@ -99,6 +99,20 @@ p img{
     width: 800px;
 }
 
+.contentwrap table{
+    width: 100%;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+}
+
+.contentwrap table th,
+.contentwrap table td{
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+}
+
 .contentwrap.small{
     width: 650px;
     margin-left: -325px;
