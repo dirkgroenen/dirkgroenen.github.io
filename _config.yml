@@ -10,4 +10,4 @@ github_username:  dirkgroenen
 # Build settings
 kramdown:
     input: GFM
-permalink: /:categories/:year-:month-:day/:title
+permalink: /:categories/:year-:month-:day/:title/
