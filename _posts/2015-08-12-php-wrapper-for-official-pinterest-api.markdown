@@ -3,6 +3,7 @@ layout: post
 title: "PHP Wrapper for the official Pinterest API"
 subtitle: "Finally, Pinterest released their official API!"
 date: 2015-08-12 16:18:47
+updated: 2016-02-13 15:40:00
 image: "/assets/images/pinterest-site.jpg"
 fbimage: "/assets/images/pinterest-site.jpg"
 categories: projects
