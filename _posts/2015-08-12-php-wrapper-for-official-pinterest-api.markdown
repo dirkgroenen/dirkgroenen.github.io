@@ -21,7 +21,8 @@ A year later a new client arrived with the same question, he wanted to integrate
 [edit January 2016]
 Previously this section contained some stuff about certrain endpoints which didn't work. By now all the endpoints in the Pinterest PHP Wrapper work.
 
-Original text:
+*Original text:*
+
 > During the development of the [PHP Wrapper](https://github.com/dirkgroenen/Pinterest-API-PHP) I noticed the documentation not being completely in line with the API itself. For instance:
 
 > ## Missing endpoints
