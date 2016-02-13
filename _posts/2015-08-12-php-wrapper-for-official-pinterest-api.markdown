@@ -17,28 +17,32 @@ It was almost a year ago when I needed to work with Pinterest for one of our cli
 A year later a new client arrived with the same question, he wanted to integrated different social media sources in his website. So I started to search on Pinterest's website to see if they had finally added an API. After I searched for a few minutes I stumbled on the [Pinterest Dev site](https://dev.pinterest.com/). Well look at that, they finally added an API! :) One 'problem': it missed a wrapper/SDK for PHP. So to help myself a bit, and maintain my PHP skills, I decided to develop a wrapper for it. Quickly I registered myself as a developer and waited for them to approve my application submission. A day later they approved it so I got started on the wrapper. 
 
 # A buggy documentation
-During the development of the [PHP Wrapper](https://github.com/dirkgroenen/Pinterest-API-PHP) I noticed the documentation not being completely in line with the API itself. For instance:
+[edit January 2016]
+Previously this section contained some stuff about certrain endpoints which didn't work. By now all the endpoints in the Pinterest PHP Wrapper work.
 
-## Missing endpoints
-Some of the documented endpoints aren't working. I've still added them to the wrapper in case they are going to work, but for now it isn't possible to make the following requests:
+Original text:
+> During the development of the [PHP Wrapper](https://github.com/dirkgroenen/Pinterest-API-PHP) I noticed the documentation not being completely in line with the API itself. For instance:
 
-```
+> ## Missing endpoints
+> Some of the documented endpoints aren't working. I've still added them to the wrapper in case they are going to work, but for now it isn't possible to make the following requests:
+
+> ```
 PATCH   /v1/pins/
 POST    /v1/me/following/interests/
 DELETE  /v1/me/following/interests/<interest_id>/
 ```
 
-I've also added these to the project's README. 
+> I've also added these to the project's README. 
 
-## Different authentication process 
-According to Pinterest the authentication process should be in line with OAuth, but at the moment it isn't. 
+> ## Different authentication process 
+> According to Pinterest the authentication process should be in line with OAuth, but at the moment it isn't. 
 
-Normally, and according to Pinterest's docs, we should first obtain an access code. Once we've obtained this code we can exchange it for an access token. At this point the Pinterest API directly returns an access token when the user is redirected from the Pinterest authentication page back to your application. 
+> Normally, and according to Pinterest's docs, we should first obtain an access code. Once we've obtained this code we can exchange it for an access token. At this point the Pinterest API directly returns an access token when the user is redirected from the Pinterest authentication page back to your application. 
 
-For now I've added the required methods for exchanging a code to an access token, in case Pinterest decides to change their authentication flow.
+> For now I've added the required methods for exchanging a code to an access token, in case Pinterest decides to change their authentication flow.~
 
-# The result
-As you can read, the API isn't working 100% properly. But hey: at least we finally have an official API to work with! 
+> # The result
+> As you can read, the API isn't working 100% properly. But hey: at least we finally have an official API to work with! 
 
 At the moment of writing the wrapper is almost finished. All the documented methods are available and working and the tests run successfully. If you have any comments, please drop them below or in the repository's [issue tracker](https://github.com/dirkgroenen/Pinterest-API-PHP/issues). 
 
