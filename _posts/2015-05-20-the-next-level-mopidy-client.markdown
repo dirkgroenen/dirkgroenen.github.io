@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The next level Mopidy music client"
-subtitle: "Since 'just playing music' didn't made me happy<br/>(and because Mopify needs a new name)"
+subtitle: "Since 'just playing music' didn't make me happy<br/>(and because Mopify needs a new name)"
 date: 2015-05-20 22:30:00
 image: "/assets/images/mopify-top-vinyl-site.jpg"
 fbimage: "/assets/images/mopify-top-vinyl-fb.jpg"
