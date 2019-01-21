@@ -1,9 +1,9 @@
 # Site settings
 title: Dirk Groenen
 email: dirk@bitlabs.nl
-description: "My blog about mostly frontend development, latest techniques and own brain eating projects."
+description: "My blog about web development, latest techniques and own brain eating projects."
 baseurl: "/"
-url: "http://dirkgroenen.nl"
+url: "https://dirkgroenen.nl"
 twitter_username: dirkgroenen
 github_username:  dirkgroenen
 
