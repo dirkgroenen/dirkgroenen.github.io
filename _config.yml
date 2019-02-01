@@ -4,7 +4,6 @@ email: dirk@bitlabs.nl
 description: "My blog about web development, latest techniques and own brain eating projects."
 baseurl: "/"
 url: "https://dirkgroenen.nl"
-twitter_username: dirkgroenen
 github_username:  dirkgroenen
 
 # Build settings

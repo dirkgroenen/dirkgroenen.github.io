@@ -141,7 +141,7 @@ p img{
     top: 10px;
     left: 20px;
     z-index: 100;
-    display: block;
+    display: none;
     width: 40px;
     height: 50px;
     cursor: pointer;
@@ -183,6 +183,10 @@ p img{
     -webkit-transform: translateZ(0) rotate(0deg);
     -moz-transform: translateZ(0) rotate(0deg);
     transform: translateZ(0) rotate(0deg);
+}
+
+.menuicon a.openmenu.closearrow {
+    display:block;
 }
 
 .menuicon a.openmenu.closearrow span{
@@ -485,7 +489,7 @@ header.image.singlepost .postdetails .subtitle{
     position: fixed;
     z-index: 200;
     top: 16px;
-    left: 75px;
+    left: 21px;
     width: 150px;
     height: 0;
 }
@@ -885,6 +889,7 @@ header.image.singlepost .postdetails .subtitle{
 /* Post paginate */
 .paginate{
     padding: 0px 0 95px 0;
+    background-color: white;
 }
 
 .paginate .column{
@@ -925,4 +930,8 @@ header.image.singlepost .postdetails .subtitle{
 .paginate a:hover:before{
     width: 100%;
     opacity: .75;
+}
+
+.comments {
+    background-color: white;
 }
