@@ -1,33 +1,34 @@
 {% include head.html %}
-    {% include standardheader.html %}
-   
-    <section class="postlist">
-        <div class="contentwrap small">
-            <div class="sorting">
-                <div class="text">Recent posts and projects <span class="arrowdown">&#9662;</span></div>
-                <ul class="dropdown">
-                    <li><a href="/blog">Recent posts</a></li>
-                    <li><a href="/projects">Recent projects</a></li>
-                </ul>
-            </div>
-            {% for post in site.posts %}
-                <div class="post">
-                    <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-                    <span class="postdate">{{ post.date | date: "%B %-d, %Y" }}</span>
-                    <div class="excerpt">
-                        {{ post.excerpt }}
-                    </div>
-                    <a href="{{ post.url }}">
-                        <div class="imagepreview">
-                             <div class="readmore">
-                                Read more about {{ post.title }}
-                            </div>
-                            <img src="{{ post.image }}">
-                        </div>
-                    </a>
-                </div>
-            {% endfor %}
+{% include standardheader.html %}
+
+<section class="main">
+    <div class="contentwrap">
+        <div class="intro">
+            <p><b>Hi there!</b> I'm a self-learned, motivated, versatile and venturous freelance software developer
+                specialized in Javascript/Typescript, both frontend (Angular) and backend (Node.JS).</p>
+
+            <p>I've worked with several languages in the past but eventually fell in love with Javascript. Knowing
+                the ins and outs I'm able to assist in developing powerful and complex
+                applications, as well as training and mentoring others.</p>
+            <p>I do my best to stay on top of new developments, am an advocate of Progressive Web Apps and lean heavily
+                on Native APIs whenever possible.</p>
+
+            <p>Feel free to look around, check my open source contributions on <a href="https://github.com/dirkgroenen"
+                    target="_blank">Github</a>,
+                experiences and reviews on <a href="https://www.linkedin.com/in/dirkgroenen"
+                    target="_blank">LinkedIn</a>
+                or <a href="mailto:dirk@bitlabs.nl" target="_blank">reach out to
+                    me</a> to see what I can do for you or your company.</p>
+
+            <p>It has been my pleasure to have already worked with the following companies:</p>
         </div>
-    </section>
+        <ul class="clientlist">
+            <li class="clientlist__item"><img src="/assets/images/client-2.png" alt="POSmusic" /></li>
+            <li class="clientlist__item"><img src="/assets/images/client-1.png" alt="Achmea Centraal Beheer" />
+            </li>
+            <li class="clientlist__item"><img src="/assets/images/client-3.png" alt="Novo Learning" /></li>
+        </ul>
+    </div>
+</section>
 
 {% include foot.html %}

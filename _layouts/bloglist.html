@@ -1,37 +1,26 @@
 {% include head.html %}
-    {% include standardheader.html %}
+{% include standardheader.html %}
 
-    <section class="postlist">
-        <div class="contentwrap small">
-            <div class="sorting">
-                <div class="text">Recent posts<span class="arrowdown">&#9662;</span></div>
-                <ul class="dropdown">
-                    <li><a href="/projects">Recent projects</a></li>
-                    <li><a href="/">Recent posts and projects</a></li>
-                </ul>
+<section class="postlist">
+    <div class="contentwrap small">
+        {% for post in site.posts %}
+        <div class="post">
+            <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <span class="postdate">{{ post.date | date: "%B %-d, %Y" }}</span>
+            <div class="excerpt">
+                {{ post.excerpt }}
             </div>
-            {% for post in site.categories.blog %}
-                <article class="post">
-                    <header>
-                        <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-                        <time pubdate="pubdate" datetime="{{ post.date }}" class="postdate">{{ post.date | date: "%B %-d, %Y" }}</time>
-                    </header>
-                    <div class="excerpt">
-                        {{ post.excerpt }}
+            <a href="{{ post.url }}">
+                <div class="imagepreview">
+                    <div class="readmore">
+                        Read more about {{ post.title }}
                     </div>
-                    <footer>
-                        <a href="{{ post.url }}">
-                            <div class="imagepreview">
-                                 <div class="readmore">
-                                    Read more about {{ post.title }}
-                                </div>
-                                <img src="{{ post.image }}">
-                            </div>
-                        </a>
-                    </footer>
-                </article>
-            {% endfor %}
+                    <img src="{{ post.image }}">
+                </div>
+            </a>
         </div>
-    </section>
+        {% endfor %}
+    </div>
+</section>
 
 {% include foot.html %}

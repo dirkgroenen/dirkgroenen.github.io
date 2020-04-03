@@ -1,6 +1,6 @@
-@media all and (max-width: 850px){
+@media all and (max-width: 850px) {
     .contentwrap,
-    .contentwrap.small{
+    .contentwrap.small {
         width: 90%;
         margin-left: 5%;
         left: 0;
@@ -11,62 +11,79 @@
         margin: 20px 0 30px 0;
     }
 
-    header.main .details h1{
+    header.main .details h1 {
         font-size: 32px;
     }
-    
-    header.image.singlepost{
+
+    header.image.singlepost {
         height: 60%;
-        min-height: 400px
+        min-height: 400px;
     }
 
-    header.image.singlepost .postdetails{
+    header.image.singlepost .postdetails {
         bottom: 5%;
     }
 
-    header.image.singlepost .postdetails h1{
+    header.image.singlepost .postdetails h1 {
         font-size: 45px;
         line-height: 45px;
     }
 
-    .authorinfo.open{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 15px;
-        left: 0;
+    .authorinfo {
+        position: inherit;
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
-    .authorinfo.open img.badge{
-        width: 150px;
+    .authorinfo .badge {
+        display: none;
     }
 
-    nav.mainmenu.open{
+    .authorinfo ul {
+        position: initial;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .authorinfo ul li {
+        display: block;
+    }
+
+    .authorinfo ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav.mainmenu.open {
         border-width: 0 0 50px 225px;
     }
 
-    nav.mainmenu ul.topleft li a{
+    nav.mainmenu ul.topleft li a {
         width: 225px;
         font-size: 18px;
     }
 
-    .postlist .post{
+    .postlist .post {
         padding: 10px 1px 20px 1px;
     }
 
-    .postlist .post .postdate{
+    .postlist .post .postdate {
         float: none;
         display: block;
         margin: -20px 0 10px 0;
     }
 
-    .postlist .post .imagepreview{
+    .postlist .post .imagepreview {
         position: static;
         height: auto !important;
         background: transparent;
         margin-top: -5px;
     }
 
-    .postlist .post .imagepreview .readmore{
+    .postlist .post .imagepreview .readmore {
         opacity: 1;
         position: static;
         color: #888;
@@ -78,26 +95,26 @@
         transform: translateX(0px);
     }
 
-    .postlist .post .imagepreview img{
+    .postlist .post .imagepreview img {
         display: none;
     }
 
-    .postcontent.singlepost{
+    .postcontent.singlepost {
         padding: 50px 0 25px 0;
         font-size: 16px;
         line-height: 28px;
     }
 
-    .postcontent.singlepost .share{
+    .postcontent.singlepost .share {
         margin-top: 5px;
     }
 
-    .paginate{
+    .paginate {
         padding: 0 0 25px 0;
     }
 
-    .paginate .column{
-        width:100%;
+    .paginate .column {
+        width: 100%;
         float: none;
     }
 }

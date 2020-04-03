@@ -1,7 +1,7 @@
 # Site settings
-title: Dirk Groenen
+title: Dirk Groenen - Freelance Full-stack Javascript Developer
 email: dirk@bitlabs.nl
-description: "My blog about web development, latest techniques and own brain eating projects."
+description: "A self-learned, motivated, versatile and venturous freelance software developer specialized in Javascript/Typescript, both frontend (Angular) and backend (Node.JS)."
 baseurl: "/"
 url: "https://dirkgroenen.nl"
 github_username:  dirkgroenen

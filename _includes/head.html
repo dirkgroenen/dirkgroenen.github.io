@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Blog">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% if page.title %}{{ page.title }} - Dirk Groenen{% else %}{{ site.title }}{% endif %}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
-        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
-        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/">
 
-        <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,700|Merriweather' rel='stylesheet' type='text/css'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }} - Dirk Groenen{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/">
 
-        <link href="//plus.google.com/117252832783742670535" rel="publisher" />
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,700|Merriweather' rel='stylesheet' type='text/css'>
 
-        <!-- JS -->
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="https://cdn.rawgit.com/dirkgroenen/jQuery-parallax-scrolling/1.0.1/src/jquery.parallaxscrolling.js"></script>
-        <script src="/assets/js/custom.js"></script>
+    <link href="//plus.google.com/117252832783742670535" rel="publisher" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
-        <!-- social tags -->
-        <meta property="og:image" content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}" />
-        <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}" />
-        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/"/>
-        <meta property="og:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen{% else %}{{ site.title }}{% endif %}" />
-        <meta itemprop="name" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
-        <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
-        <meta itemprop="image" content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
+    <!-- JS -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+        src="https://cdn.rawgit.com/dirkgroenen/jQuery-parallax-scrolling/1.0.1/src/jquery.parallaxscrolling.js"></script>
+    <script src="/assets/js/custom.js"></script>
 
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@dirkgroenen">
-        <meta name="twitter:creator" content="@dirkgroenen">
-        <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
-        <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
-        <meta name="twitter:image" content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
+    <!-- social tags -->
+    <meta property="og:image"
+        content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}" />
+    <meta property="og:description"
+        content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:url"
+        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/" />
+    <meta property="og:title"
+        content="{% if page.title %}{{ page.title }} - Dirk Groenen{% else %}{{ site.title }}{% endif %}" />
+    <meta itemprop="name"
+        content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
+    <meta itemprop="description"
+        content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
+    <meta itemprop="image"
+        content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
 
-        <link rel="shortcut icon" type="image/png" href="/assets/images/pfbadge.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dirkgroenen">
+    <meta name="twitter:creator" content="@dirkgroenen">
+    <meta name="twitter:title"
+        content="{% if page.title %}{{ page.title }} - Dirk Groenen {% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description"
+        content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image"
+        content="{{ site.url }}{% if page.fbimage %}{{ page.fbimage }}{% else %}{{ page.image }}{% endif %}">
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <link rel="shortcut icon" type="image/png" href="/assets/images/pfbadge.png" />
 
-          ga('create', 'UA-23792910-14', 'auto');
-          ga('send', 'pageview');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        </script>
-    </head>
-    <body>
-        <div class="contactoverlay"></div>
-        <div class="menuicon">
-            <a href="#menu" class="openmenu white"><span></span></a>
-        </div>
-        <div class="authorinfo white">
-            <img src="/assets/images/pfbadge.png" alt="Go back" class="badge showcontact">
-            <span class="text" itemprop="author">Dirk Groenen</span>
-            <div class="opentext">
-                <p>Freelance Full-stack Developer from The Netherlands who focusus on writing clean and efficient code using the latest techniques. Experienced in: Ruby on Rails, Laravel, Angular, RxJs, Typescript, NodeJS, AWS, Docker and more...</p>
-                <p><a style="color:white"; href="mailto:dirk@bitlabs.nl">dirk@bitlabs.nl</a></p>
-            </div>
-        </div>
-        <!--[if lt IE 9]>
-        <div class="contentwrap" style="position: fixed;top: 0; z-index:9999;">
-            <p style="text-align: center;margin: 15px 0;background: #f0f0f0; padding: 10px;">It looks like you're using a really old browser that doesn't support this website. This blog is created for developers or people interested in developing. I may hope that you also have some nice <a href="http://google.com/chrome">Chrome</a> installed? </p>
-        </div>
-        <![endif]-->
+        ga('create', 'UA-23792910-14', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <div class="authorinfo">
+        <img src="/assets/images/pfbadge.png" alt="Go back" class="badge showcontact">
+        <ul>
+            <li><a href="/" class="text">/dirkgroenen</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="mailto:dirk@bitlabs.nl" target="_blank">Contact me</a></li>
+        </ul>
+    </div>
