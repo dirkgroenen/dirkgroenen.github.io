@@ -450,10 +450,8 @@ header.image.singlepost {
     width: 100%;
     height: 70%;
     overflow-x: hidden;
-}
-
-header.image.singlepost img {
-    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 header.image.singlepost .gradientoverlay {
