@@ -1,0 +1,21 @@
+{
+    "schemaVersion": "1.0",
+    "endpoints": [
+        {
+            "type": "radio",
+            "uri": "http://192.168.1.20:3000/sonos/v2.3/radio"
+        },
+        {
+            "type": "reporting",
+            "uri": "http://192.168.1.20:3000/sonos/v2.3/report"
+        }
+    ],
+    "presentationMap": {
+        "uri": "http://192.168.1.20:3000/sonos/v1/presentationmap.xml",
+        "version": 2
+    },
+    "strings": {
+        "uri": "http://192.168.1.20:3000/sonos/v1/strings.xml",
+        "version": 2
+    }
+}
