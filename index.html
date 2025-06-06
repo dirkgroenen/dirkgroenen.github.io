@@ -1,0 +1,114 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  <title>Dirk Groenen</title>
+  <script>tailwind.config = {
+      "theme": {
+        "extend": {
+          "colors": {
+            "midnight-blue": "#405479",
+            "silver": "#a4a4b4"
+          },
+          "fontFamily": {
+            "helvetica": [
+              "Helvetica",
+              "Arial",
+              "sans-serif"
+            ],
+            "sans": [
+              "Inter",
+              "sans-serif"
+            ]
+          }
+        }
+      }
+    };</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif !important;
+    }
+
+    /* Preserve Font Awesome icons */
+    .fa,
+    .fas,
+    .far,
+    .fal,
+    .fab {
+      font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+    }
+  </style>
+  <style>
+    .highlighted-section {
+      outline: 2px solid #3F20FB;
+      background-color: rgba(63, 32, 251, 0.1);
+    }
+
+    .edit-button {
+      position: absolute;
+      z-index: 1000;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    html,
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="font-helvetica bg-white text-gray-800">
+  <!-- Hero Section -->
+  <section id="hero" class="h-[100vh] flex items-center justify-center bg-white px-4 md:px-8 lg:px-16">
+    <div class="container mx-auto text-center">
+      <div class="mx-auto max-w-4xl">
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-midnight-blue mb-8 tracking-tight">
+          Dirk Groenen
+        </h1>
+        <p class="text-lg text-gray-600 mb-16 font-normal">
+          Energiemonitoring & Optimalisatie<br /> Hands-on Software Engineering & Advies voor (Energie-)Startups en
+          MKB
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+          <a class="group flex items-center justify-center w-full md:w-72 py-4 px-6 border-2 border-gray-400 rounded-lg hover:border-midnight-blue transition-all duration-300 transform hover:scale-105 bg-white cursor-pointer"
+            href="https://energylabs.nl" target="_blank">
+            <span class="text-lg font-bold text-midnight-blue">EnergyLabs.nl</span>
+          </a>
+
+          <a class="group flex items-center justify-center w-full md:w-72 py-4 px-6 border-2 border-gray-400 rounded-lg hover:border-midnight-blue transition-all duration-300 transform hover:scale-105 bg-white cursor-pointer"
+            href="https://github.com/dirkgroenen" target="_blank">
+            <span class="text-lg font-bold text-midnight-blue">Github</span>
+          </a>
+
+          <a class="group flex items-center justify-center w-full md:w-72 py-4 px-6 border-2 border-gray-400 rounded-lg hover:border-midnight-blue transition-all duration-300 transform hover:scale-105 bg-white cursor-pointer"
+            href="https://www.linkedin.com/in/dirkgroenen" target="_blank">
+            <span class="text-lg font-bold text-midnight-blue">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
